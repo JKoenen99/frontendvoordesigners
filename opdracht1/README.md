@@ -3,9 +3,7 @@ Ik heb bij deze opdracht een webpagina gemaakt waarin drie filter knoppen te vin
 Ik heb gebruik gemaakt van javascript en classList.toggle om classes toe te voegen en te verwijderen.
 
 Probeer hier de Demo website uit:
-
 [Demo voor Foto's filteren](https://jkoenen99.github.io/frontendvoordesigners/opdracht1/v1/)
 
 Link naar de bron code van de demo:
-
 [Code Demo voor Foto's filteren](https://github.com/jkoenen99/frontendvoordesigners/blob/master/opdracht1/v1/)
