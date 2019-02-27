@@ -1,7 +1,7 @@
 # Frontend voor Designers - Jasper Koenen
 In het vak Frontend voor Designers leer je hoe je met HTML en CSS, en een beetje Javascript, snel en eenvoudig prototypes kan maken om je ontwerp ideeën te testen in een browser. We gaan animeren, responsive layouts uitproberen en interactie coderen ...
 
-Dit is de [online url](https://koopreynders.github.io/frontendvoordesigners/) met de opdrachten om te kunnen bekijken en testen in een browser.
+Dit is de [online url](https://JKoenen99.github.io/frontendvoordesigners/) met de opdrachten om te kunnen bekijken en testen in een browser.
 
 Het vak bestaat uit 3 opdrachten:
 
@@ -11,5 +11,5 @@ Het vak bestaat uit 3 opdrachten:
 
 
 ---
-- [Markup cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Getting started with GitHub Pages](https://guides.github.com/features/pages/)
+Jasper Koenen
+2019
