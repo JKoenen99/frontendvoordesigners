@@ -5,7 +5,7 @@ Dit is de [online url](https://JKoenen99.github.io/frontendvoordesigners/) met d
 
 Het vak bestaat uit 3 opdrachten:
 
-1. Foto's Filteren](opdracht1/)
+1. [Foto's Filteren](opdracht1/)
 2. [Opdracht 2](opdracht2/)
 3. [Opdracht 3](opdracht3/)
 
