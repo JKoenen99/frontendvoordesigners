@@ -1,16 +1,59 @@
-<html>
-  <head></head>
-  <body>
-    <p>
-      Hier komt de HTML van de interactieve demo te staan voor de eerste opdracht:
-      Ontwerp een user interface voor een gegeven use case.
-      Werk je ontwerp uit in HTML, CSS en Javascript om te kunnen testen in een browser.
-    </p>
-    <ol>
-      <li>Als ik een lijst films heb gevonden, wil ik leuke films kunnen opslaan om ze thuis te ...</li>
-      <li>In een lijst gevonden studentenhuizen wil ik details kunnen bekijken om te bepalen of de kamer geschikt is.</li>
-      <li>In een verzameling muzieknummers wil ik de volgorde kunnen veranderen om een vette playlist te maken.</li>
-      <li>Als ik foto's zoek wil ik kunnen selecteren op kleur om verassende zoekresultaten te krijgen.</li>
-    </ol>
-  </body>
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<title>Filteren</title>
+		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700,700i" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="typewriter">
+					<h1><a href="#">Jasper<span>Koenen</span></a></h1>
+				</div>
+				<ul>
+					<li class="this-page"><a href="index.html">Home</a></li>
+					<li><a href="https://github.com/JKoenen99/UC1">Over</a></li>
+					<li><a href="https://instagram.com/Jasper_Koenen"><img src="img/instagram-logo.svg"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>Fotogalerij</h2>
+				<p>Dit is een fotogalerij, je kunt de foto's op kleur filteren.</p>
+				<form action="#">
+					<fieldset>
+						<legend>Kleur:</legend>
+						<div class="radiobtn">
+							<input type="checkbox" id="rood" name="rood" value="rood" checked>
+							<label for="rood">Rood</label>
+						</div>
+						<div class="radiobtn">
+							<input type="checkbox" id="groen" name="groen" value="groen" checked>
+							<label for="groen">Groen</label>
+						</div>
+						<div class="radiobtn">
+							<input type="checkbox" id="blauw" name="blauw" value="blauw" checked>
+							<label for="blauw">Blauw</label>
+						</div>
+					</fieldset>
+				</form>
+				<div id="grid">
+					<img src="img/fotos/rood1.jpeg" class="rood" alt="rode foto">
+					<img src="img/fotos/rood2.jpeg" class="rood" alt="rode foto">
+					<img src="img/fotos/rood3.jpeg" class="rood" alt="rode foto">
+					<img src="img/fotos/groen1.jpeg" class="groen" alt="groene foto">
+					<img src="img/fotos/groen2.jpeg" class="groen" alt="groene foto">
+					<img src="img/fotos/groen3.jpeg" class="groen" alt="groene foto">
+					<img src="img/fotos/blauw1.jpeg" class="blauw" alt="blauwe foto">
+					<img src="img/fotos/blauw2.jpeg" class="blauw" alt="blauwe foto">
+					<img src="img/fotos/blauw3.jpeg" class="blauw" alt="blauwe foto">
+				</div>
+			</section>
+		</main>
+		<script src="scripts/script.js"></script>
+	</body>
 </html>
