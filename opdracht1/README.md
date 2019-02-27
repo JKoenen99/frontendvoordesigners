@@ -1,16 +1,11 @@
-# FvD - opdracht 1: Foto's Filteren
-Hier beschrijf je de opdracht, wat je hebt gemaakt en hoe je je ontwerp door verschillende versies te testen hebt verbeterd. Bij iedere test voeg je een link toe naar de betreffende demo.
+# FvD - Opdracht 1: Foto's Filteren
+Ik heb bij deze opdracht een webpagina gemaakt waarin drie filter knoppen te vinden zijn: rood, groen en blauw. Foto's kunnen gefilterd worden op deze kleuren. Ik heb gebruikgemaakt van flexbox om de foto's overzichtelijk weer te geven en de foto's hebben een aantal 'hover' effects.
+Ik heb gebruik gemaakt van javascript en classList.toggle om classes toe te voegen en te verwijderen.
 
-Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
+Probeer hier de Demo website uit:
 
-[Demo 1 voor opdracht 1](https://jkoenen99.github.io/frontendvoordesigners/opdracht1/v1/)
+[Demo voor Foto's filteren](https://jkoenen99.github.io/frontendvoordesigners/opdracht1/v1/)
 
-[Demo 2 voor opdracht 1](https://jkoenen99.github.io/frontendvoordesigners/opdracht1/v2/)
+Link naar de bron code van de demo:
 
-[Demo 3 voor opdracht 1](https://jkoenen99.github.io/frontendvoordesigners/opdracht1/v3/)
-
-[Demo 4 voor opdracht 1](https://jkoenen99.github.io/frontendvoordesigners/opdracht1/v4/)
-
-Je kan ook een link plaatsen naar de bron code van de demo:
-
-[Code demo 1 voor opdracht 1](https://github.com/jkoenen99/frontendvoordesigners/blob/master/opdracht1/v1/)
+[Code Demo voor Foto's filteren](https://github.com/jkoenen99/frontendvoordesigners/blob/master/opdracht1/v1/)
