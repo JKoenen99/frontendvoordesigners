@@ -1,4 +1,4 @@
-# Frontend voor Designers - opdracht 1
+# FvD - opdracht 1: Foto's Filteren
 Hier beschrijf je de opdracht, wat je hebt gemaakt en hoe je je ontwerp door verschillende versies te testen hebt verbeterd. Bij iedere test voeg je een link toe naar de betreffende demo.
 
 Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
