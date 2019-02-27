@@ -6,4 +6,4 @@ Probeer hier de Demo website uit:
 [Demo voor Foto's filteren](https://jkoenen99.github.io/frontendvoordesigners/opdracht1/v1/)
 
 Link naar de bron code van de demo:
-[Code Demo voor Foto's filteren](https://github.com/jkoenen99/frontendvoordesigners/blob/master/opdracht1/v1/)
+[Code van de Demo Foto's filteren](https://github.com/jkoenen99/frontendvoordesigners/blob/master/opdracht1/v1/)
