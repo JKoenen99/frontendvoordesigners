@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+header {
+	--header-height: 30px;
+}
+body {
+	background-color: black;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+body:hover {
+	background-color: black;
+}
+/* Header */
+header {
+	list-style: none;
+	width: 50%;
+	margin: auto;
+	margin-top: calc(50vh - var(--header-height));
+	text-align: center;
+}
+
+header nav ul {
+	color: white;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+	width: 50%;
+	margin: auto;
+	margin-top: 0.5em;
+}
+
+header nav ul li {
+	margin: auto;
+	min-width: 30%;
+}
+
+header nav ul li svg {
+	height: 1.5em;
+	width: 1.5em;
+	fill: white;
+}
+
+header nav ul li a:hover {
+	opacity: 0.6;
+}
+
+header nav ul li:nth-of-type(3) {
+	
+}
+
+.typewriter {
+	padding: 0em 1em;
+	width: 235px;
+	margin: 0 auto;
+}
+.typewriter h1 {
+	color: grey;
+	overflow: hidden;
+	border-right: .15em solid orange;
+	text-transform: uppercase;
+	white-space: nowrap;
+	margin-left: 0 auto;
+	letter-spacing: .15em;
+	animation: 
+	typing 2.5s steps(40, end),
+	blink-caret .75s step-end infinite;
+}
+
+.typewriter span {
+	color: white;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.scroll-hint {
+	text-align: center;
+	margin-top: 10%;
+	font-style: italic;
+	color: lightgrey;
+}
+
+/* Projecten */
+.projects {
+	height: 100em;
+	width: 100vw;
+	background-color: orange;
+	display: block;
+}
