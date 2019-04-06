@@ -39,6 +39,27 @@ section ul{
   padding: 0em;
   background: pink;
 }
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 header {
   background-color: #5C1349;
@@ -51,6 +72,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 75vw;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 header img {
@@ -58,9 +80,19 @@ header img {
   height: 2em;
 }
 
+header img:hover {
+  transition: 1s;
+  transform: scale(0.95);
+  transform: rotate(360deg);
+}
+
 header h1 {
   color: #FFFFFF;
   display: inline-block;
+}
+
+header h1:hover {
+  transform: scale(1.02);
 }
 
 header button {
@@ -117,6 +149,7 @@ article {
   box-sizing: border-box;
   border-radius: 1em;
   transition: 0.4s;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
 article img {
@@ -127,14 +160,8 @@ article img {
 }
 
 article:hover {
-  transform: scale(1.025);
+  transform: scale(0.97);
 }
-
-/* article img:hover {
-  opacity: 0.9;
-  transition: 0.4s;
-  transform: scale(0.95);
-} */
 
 article:hover img{
   opacity: 0.9;
@@ -151,3 +178,4 @@ article h2 {
   margin-right: 6em;
   border-bottom: 3px solid #5C1349;
 }
+
