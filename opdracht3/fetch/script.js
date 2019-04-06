@@ -20,6 +20,7 @@ function showData(jsonObj) {
     console.log("film " + i);
     var filmpiekijken = document.createElement('article');
 
+    var filmdetails = document.createElement('section');
     var filmtitel = document.createElement('h2');
     filmtitel.textContent = films[i].title;
     var filmplot = document.createElement('p');
