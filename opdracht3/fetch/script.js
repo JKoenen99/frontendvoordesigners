@@ -4,11 +4,11 @@
 //var uri = "https://open.data.amsterdam.nl/Attracties.json";
 //var uri = "https://open.data.amsterdam.nl/Activiteiten.json";
 //var uri = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
-var uri = "http://dennistel.nl/movies";
+var uri = "json/movies.json";
 
 var section = document.querySelector('section');
 var button = document.querySelector("button");
-var loaderElement = document.querySelector("span");
+var loaderElement = document.querySelector("#loader");
 console.log("loaderElement",loaderElement);
 
 ////https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
@@ -75,16 +75,24 @@ function loadimagesmetXHR(){
 //loadimagesmetXHR();
 
 //actie
-button.onclick = function(){
-  loaderElement.classList.add('show');
-  this.classList.add('hide');
-  section.innerHTML = ""; //main leeghalen. just in case
-  loadimagesmetXHR();
-};
+// button.onclick = function(){
+//   loaderElement.classList.add('show');
+//   this.classList.add('hide');
+//   section.innerHTML = ""; //main leeghalen. just in case
+//   loadimagesmetXHR();
+// };
 
 
+var delayInMilliseconds = 400; // 1 seconde
 
-
+button.onclick = function() {
+  setTimeout(function() {
+    loaderElement.classList.add('show');
+    button.classList.add('hide');
+    section.innerHTML = ""; // main leeghalen. just in case
+    loadimagesmetXHR();
+  }, delayInMilliseconds);
+}
 
 
 function loadRestApiFetch(){ //Rest Api call met Fetchs
