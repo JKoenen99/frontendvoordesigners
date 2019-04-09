@@ -18,34 +18,62 @@ function showData(jsonObj) {
 
   for (var i = 0; i < films.length; i++) {
     console.log("film " + i);
+    var filmdiv = document.createElement('div');
     var filmpiekijken = document.createElement('article');
 
     var filmdetails = document.createElement('section');
+     var filmcover = document.createElement('img');
+    filmcover.src = films[i].cover;
     var filmtitel = document.createElement('h2');
     filmtitel.textContent = films[i].title;
+    var filmdatum = document.createElement('span');
+    filmdatum.textContent = films[i].release_date;
+    filmdatum.classList.add('filmdatum');
     var filmplot = document.createElement('p');
     filmplot.textContent = films[i].simple_plot;
-    var filmcover = document.createElement('img');
-    filmcover.src = films[i].cover;
+    var filmgenre = document.createElement('span');
+    filmgenre.textContent = films[i].genres;
+    filmgenre.classList.add('filmgenre');
+  
     //myImg.textContent = films[i].cover;
-    console.log(filmcover.src);
+    // console.log(filmcover.src);
 
-    var reviewslezen = document.createElement('ul');
-    var reviews = films[i].reviews;
-    for (var j = 0; j < reviews.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = reviews[j].score + ' - ' + reviews[j].created_at;
-      reviewslezen.appendChild(listItem);
-    }
-
-    filmpiekijken.appendChild(filmtitel);
-    filmpiekijken.appendChild(filmplot);
+    // var reviewslezen = document.createElement('ul');
+    // var reviews = films[i].reviews;
+    // for (var j = 0; j < reviews.length; j++) {
+    //   var listItem = document.createElement('li');
+    //   listItem.textContent = reviews[j].score + ' - ' + reviews[j].created_at;
+    //   reviewslezen.appendChild(listItem);
+    // }
+    section.appendChild(filmdiv);
+    filmdiv.appendChild(filmpiekijken);
     filmpiekijken.appendChild(filmcover);
-    filmpiekijken.appendChild(reviewslezen);
+    filmpiekijken.appendChild(filmtitel);
+    filmpiekijken.appendChild(filmdatum);
+    filmpiekijken.appendChild(filmplot);
+    filmpiekijken.appendChild(filmgenre);
 
-    section.appendChild(filmpiekijken);
+    
+
+    var filmcard = document.querySelector('div');
+
+filmcard.onclick = function() {
+  filmcard.classList.toggle('big');
+  console.log("Toggle grootte");
+}
+
+window.onkeydown = function(event) {
+  if (event.keycode = 13) {
+    console.log('event', event);
+    document.querySelector('div').click();
+  } 
+  else {
+    console.log('foute toets!')
   }
 }
+}
+}
+
 
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
 //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
@@ -95,7 +123,6 @@ button.onclick = function() {
   }, delayInMilliseconds);
 }
 
-
 function loadRestApiFetch(){ //Rest Api call met Fetchs
   console.log("function loadRestApiFetch");
 
@@ -125,3 +152,6 @@ function loadRestApiFetch(){ //Rest Api call met Fetchs
     });
 }
 //loadRestApiFetch();
+
+console.log("het script.js is geladen")
+

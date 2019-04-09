@@ -34,11 +34,7 @@ body{
 }
 
 /* ************* */
-section ul{
-  display: none;
-  padding: 0em;
-  background: pink;
-}
+
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -114,7 +110,7 @@ header button span {
 }
 
 header button:hover {
-  opacity: 0.9;
+  opacity: 0.85;
   transition: 0.5s;
   background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
 }
@@ -132,50 +128,83 @@ section {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  align-content: flex-start;
+  align-content: space-between;
   max-width: 75vw;
+  padding: 1em;
 }
 
-article {
-  width: auto;
-  max-width: 31%;
-  height: 95%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  background-color: #fff;
-  margin: 1em;
-  box-sizing: border-box;
-  border-radius: 1em;
+div {
   transition: 0.4s;
   animation: 1s ease-out 0s 1 slideInFromBottom;
+  background-color: white;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 1em;
+  flex: 0 1 calc(24% - 1em);
 }
 
 article img {
-  order: 0;
   border-radius: 1em;
   width: 100%;
   transition: 0.4s;
+  display: block;
+  z-index: 0;
+  position: relative;
 }
 
-article:hover {
+div:hover {
   transform: scale(0.97);
 }
 
-article:hover img{
+div:hover img{
   opacity: 0.9;
 }
 
-article p {
-  order: 2;
+article h2 {
+  font-size: 1em;
+  color: black;
+  display: block;
+  z-index: 1;
+  position: relative;
 }
 
-article h2 {
+p, .filmdatum {
+  display: none;
+}
+
+
+.big {
+  flex-grow: 1;
+  display: block;
+}
+
+p, .filmdatum, .filmgenre, h2 {
+  z-index: 100;
+}
+
+.big p, .big .filmdatum, .big .filmgenre {
+  display: block;
+  font-size: 100%;
+  
+}
+
+.big h2 {
+  font-size: 2em;
+  color: white;
+  margin-top: -1.2em;
+  border-bottom: 0.3em solid #5C1349;
+  margin-bottom: 0.4em
+}
+
+
+article .filmdatum {
+  font-style: italic;
+  color: grey;
+}
+
+article .filmgenre {
+  font-style: italic;
   color: #5C1349;
-  order: 1;
-  padding-bottom: 5px;
-  margin-right: 6em;
-  border-bottom: 3px solid #5C1349;
+  font-size: 80%;
 }
 
