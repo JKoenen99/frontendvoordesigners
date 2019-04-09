@@ -189,11 +189,11 @@ p, .filmdatum, .filmgenre, h2 {
 }
 
 .big h2 {
-  font-size: 2em;
-  color: white;
-  margin-top: -1.2em;
+  font-size: 1.2em;
+  color: #5C1349;
   border-bottom: 0.3em solid #5C1349;
-  margin-bottom: 0.4em
+  margin-bottom: 0.4em;
+  padding-bottom: 0.2em;
 }
 
 

@@ -53,24 +53,33 @@ function showData(jsonObj) {
     filmpiekijken.appendChild(filmplot);
     filmpiekijken.appendChild(filmgenre);
 
-    
+    var filmcards = document.querySelectorAll("div");
 
-    var filmcard = document.querySelector('div');
+    for (var i = 0; i < filmcards.length; i++){
+      filmcards[i].addEventListener("click", function() {
+        this.classList.toggle('big');
+      });
+    }
 
-filmcard.onclick = function() {
-  filmcard.classList.toggle('big');
-  console.log("Toggle grootte");
-}
 
-window.onkeydown = function(event) {
-  if (event.keycode = 13) {
-    console.log('event', event);
-    document.querySelector('div').click();
-  } 
-  else {
-    console.log('foute toets!')
-  }
-}
+    // var filmcard = document.querySelector('div');
+
+// filmcard.onclick = function() {
+//   filmcard.classList.toggle('big');
+//   console.log("Toggle grootte");
+// }
+
+// window.onkeydown = function(event) {
+//   if (event.keycode = 13) {
+//     console.log('event', event);
+//     document.querySelector('div').click();
+//   } 
+//   else {
+//     console.log('foute toets!')
+//   }
+// }
+
+
 }
 }
 
