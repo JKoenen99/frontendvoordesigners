@@ -101,6 +101,7 @@ function loadimagesmetXHR(){
     for (var i = 0; i < filmcards.length; i++){
       filmcards[i].addEventListener("click", function() {
         this.classList.toggle('big');
+        console.log(this)
         console.log('klik');
       });
     }
